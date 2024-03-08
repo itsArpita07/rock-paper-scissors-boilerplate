@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-cover">
+    <div class="scoreboard">
+        <span id="scores">0-0</span>
+    </div>
+    <div class="gameplay-container">
+        <div class="player">
+            <span id="player-label">YOU</span>
+            <img src="assets/paper-logo.png" id="paper" alt="paper">
+            <img src="assets/rock-logo.png" id="rock" alt="rock">
+            <img src="assets/scissors-logo.png" id="scissors" alt="scissors">
+            <img id="selected-logo" src="" alt="Selected Logo"  style="display: none;">
+        </div>
+        <img src="assets/vs.png" id="versus" width="50px" height="205px">
+        <div class="computer">
+            COMP
+            <img id="computer-logo" src="" alt="Computer Logo"  style="display: none;">  
+        </div>
+    </div>
+    <div id="game-over">
+        <h1 class="game-over-message"></h1>
+        <button class="play-again-button" style="display: none;">Play Again</button>
+    </div>
+    <script src="game.js"></script> 
+</body>
+</html>
